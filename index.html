@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Useful Weather app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Micro+5&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-10 text-center">
+                <img src="useweather%20title.png" class="weather-title"><div id="textBeforeTemp">The temp in your area of earth is </div>
+                <div id="TempTemp"></div>
+                
+                <div id="textAfterTemp">percent of the sun's heat </div>
+                
+                <canvas id="pieChart" class="mt-4"></canvas>
+                <div id="FHeight"></div>
+                <div id="TimeTime" class="mt-4"></div>
+                <div id="Timerise" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+     <div id ="whatWeather" ></div>
+
+<div class="row justify-content-center">
+    
+    
+ <div class="col-4" id="useful" style="text-align: center">Make Useful</div>
+    <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">X</span>
+    <p>Enter the year that the objectively greatest album of all time was released</p>
+    <input type="text" id="userInput" >
+    <button id="submitBtn">Submit</button>
+  </div>
+</div>
+    
+    </div>
+    
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text color */
+    background-color: #d8fb51;
+    border: 1px solid #2a3913;
+    height:99vh;
+    margin:3px;
+    max-width:600px;
+}
+
+.container {
+    max-width: 600px; /* Center content and limit width for mobile */
+}
+
+h1 {
+    font-family: 'micro 5', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
+    color: #273a17; /* Blue heading color */
+}
+
+#TempTemp,
+#TimeTime,
+#Timerise,
+#textBeforeTemp,
+#textAfterTemp,
+#useful,
+.close,
+#submitBtn{
+    font-size: 24px; /* Increase font size for better readability */
+    font-family: 'micro 5', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+
+#useful{
+    border:1px solid #343a40;
+    box-shadow: 2px 2px#343a40;
+}
+
+
+
+
+
+#textBeforeTemp{
+    animation: typing4 1s 0s steps(40, end) forwards; /* Add 'forwards' to retain the final state of animation */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    opacity: 0; /* Initially invisible */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;
+}
+
+/* The typing effect */
+@keyframes typing4 {
+    0% { width: 0; opacity: 100; } /* Start with width 0 and opacity 0 */
+    100% { width: 100%; opacity: 1; } /* End with full width and opacity 1 */
+}
+
+
+
+
+
+
+
+#TempTemp{
+    animation: typing3 1s 1s steps(40, end) forwards; /* Add 'forwards' to retain the final state of animation */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    opacity: 0; /* Initially invisible */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;
+}
+
+/* The typing effect */
+@keyframes typing3 {
+    0% { width: 0; opacity: 100; } /* Start with width 0 and opacity 0 */
+    100% { width: 100%; opacity: 1; } /* End with full width and opacity 1 */
+}
+
+
+
+
+#textAfterTemp{
+    animation: typing2 1s 2s steps(40, end) forwards; /* Add 'forwards' to retain the final state of animation */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    opacity: 0; /* Initially invisible */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;
+}
+
+/* The typing effect */
+@keyframes typing2 {
+    0% { width: 0; opacity: 100; } /* Start with width 0 and opacity 0 */
+    100% { width: 100%; opacity: 1; } /* End with full width and opacity 1 */
+}
+
+
+
+
+
+
+#Timerise{
+    animation: typing1 1s 4s steps(40, end) forwards; /* Add 'forwards' to retain the final state of animation */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    opacity: 0; /* Initially invisible */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;
+}
+
+/* The typing effect */
+@keyframes typing1 {
+    0% { width: 0; opacity: 100; } /* Start with width 0 and opacity 0 */
+    100% { width: 100%; opacity: 1; } /* End with full width and opacity 1 */
+}
+
+
+
+#TimeTime {
+    animation: typing 1s 3s steps(40, end) forwards; /* Add 'forwards' to retain the final state of animation */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    opacity: 0; /* Initially invisible */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;
+}
+
+/* The typing effect */
+@keyframes typing {
+    0% { width: 0; opacity: 100; } /* Start with width 0 and opacity 0 */
+    100% { width: 100%; opacity: 1; } /* End with full width and opacity 1 */
+}
+
+/* The typewriter cursor effect */
+
+
+#pieChart {
+    max-width: 200px; /* Limit chart width */
+    max-height: 200px; /* Limit chart height */
+      margin: 0 auto; /* Center the chart horizontally */
+  /* Center the chart horizontally */
+    margin-top: -20px!important;
+    font-family: 'micro 5', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.weather-title {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    font-family: 'micro 5', Tahoma, Geneva, Verdana, sans-serif;
+    clip-path: inset(100% 0 0 0); /* Start with fully cropped */
+    animation: revealFromTop 2s forwards; /* Use animation to reveal */
+}
+
+@keyframes revealFromTop {
+    from {
+        clip-path: inset(0 0 100% 0); /* Start with fully cropped */
+    }
+    to {
+        clip-path: inset(0 0 0 0); /* End with no cropping */
+    }
+}
+
+
+.mt-4{margin-top:0!important}
+
+
+#whatWeather.under0 {
+    background-image: url("under%200.png");
+}
+
+#whatWeather.e0-40 {
+    background-image: url("0-50.png");
+}
+
+#whatWeather.e40-50 {
+    background-image: url("40-50.png");
+}
+
+#whatWeather.e50-65 {
+    background-image: url("50-65.png");
+}
+
+#whatWeather.e65-90 {
+    background-image: url("65-90.png");
+}
+
+#whatWeather.e90plus {
+    background-image: url("90+.png");
+}
+
+#whatWeather{
+    width:100%;
+    height:100px;
+    
+background-attachment: scroll;
+background-size:cover;
+   animation: revealFromTop1 2s  forwards;
+    animation-delay:2s;
+    opacity:0
+}
+
+@keyframes revealFromTop1 {
+    from {
+        clip-path: inset(0 0 100% 0); /* Start with fully cropped */opacity:1
+    }
+    to {
+        clip-path: inset(0 0 0 0); 
+        opacity:1;/* End with no cropping */
+    }
+}}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+ background-color: #273a17;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal-content p{
+text-align: center;
+color:#d8fb51; 
+    opacity:0;
+font-size: 24px; /* Increase font size for better readability */
+    font-family: 'micro 5', Tahoma, Geneva, Verdana, sans-serif;
+animation: typing2 1s 2s steps(40, end) forwards;
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.noDisplay{
+    
+    display: none!important;
+}
+
+
+
